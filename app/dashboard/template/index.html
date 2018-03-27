@@ -1,0 +1,56 @@
+<div class="row pt-2" ng-controller="dashboardContoller as dashboardCtrl">
+  <div class="col-lg-3 grid-margin">
+    <div class="card chart-bg">
+      <div class="card-body">
+        <div class="wrapper d-flex justify-content-center mt-4 mb-4">
+          <div class="icon"><i class="mdi mdi-chart-pie icon-md text-success mr-2"></i></div>
+          <div class="details">
+            <h2 class="mb-1 mt-2">Invoice</h2>
+            <h4>dashboardCtrl.title</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 grid-margin">
+    <div class="card user-bg">
+      <div class="card-body">
+        <div class="wrapper d-flex justify-content-center mt-4 mb-4">
+          <div class="icon"><i class="mdi mdi-account-multiple icon-md text-info mr-2"></i></div>
+          <div class="details">
+            <h2 class="mb-1 mt-2">Stock</h2>
+            <h4>18</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 grid-margin">
+    <div class="card wallet-bg">
+      <div class="card-body">
+        <div class="wrapper d-flex justify-content-center mt-4 mb-4">
+          <div class="icon"><i class="mdi mdi-wallet icon-md text-primary mr-2"></i></div>
+          <div class="details">
+            <h2 class="mb-1 mt-2">Tax</h2>
+            <h4>359</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 grid-margin">
+    <div class="card layer-bg">
+      <div class="card-body">
+        <div class="wrapper d-flex justify-content-center mt-4 mb-4">
+          <div class="icon"><i class="mdi mdi-buffer icon-md text-warning mr-2"></i></div>
+          <div class="details">
+            <h2 class="mb-1 mt-2">Purchase</h2>
+            <h4>12</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div ng-include="'../app/dashboard/template/invoice-table.html'"></div>

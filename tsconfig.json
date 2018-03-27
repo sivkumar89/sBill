@@ -1,0 +1,10 @@
+{
+    "files": [
+        "app.ts",
+        "../app/dashboard/script/dashboard-controller.ts"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es5"
+    }
+}
