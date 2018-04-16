@@ -3,38 +3,38 @@
     <div class="box-header with-border">
       <h3 class="box-title">Invoice Note</h3>
       <div class="box-tools">
-          <button type="button" class="btn btn-info" onclick="createRecord();" title="Add Sales Plan">
+          <button type="button" class="btn btn-info" onclick="viewInvoiceList();" title="Invoice List">
             <i class="fa fa-file-text-o">&nbsp; Invoice List</i>
           </button>
       </div>
     </div>
-    <div class="row pt-4">
+    <div class="pt-4">
       <form class="col-12 row">
         <div class="col-6">
           <div class="form-group row">
-            <label for="inputEmail3" class="col-sm-4 col-form-label">Customer Name</label>
+            <label for="CustomerName" class="col-sm-4 col-form-label">Customer Name</label>
             <div class="col-sm-8">
-              <input type="text" class="form-control" id="customer-name" placeholder="Customer Name">
+              <input type="text" class="form-control" name="CustomerName" id="customer-name" placeholder="Customer Name">
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-4 col-form-label">HSN/SAC</label>
+            <label for="HSN" class="col-sm-4 col-form-label">HSN/SAC</label>
             <div class="col-sm-8">
-              <input type="text" class="form-control" id="inputPassword3" placeholder="HSN/SAC">
+              <input type="text" class="form-control" name="HSN" id="hsn" placeholder="HSN/SAC">
             </div>
           </div>
         </div>
         <div class="col-6">
           <div class="form-group row">
-            <label for="inputEmail3" class="col-sm-4 col-form-label">Invoice Date</label>
+            <label for="InvoiceDate" class="col-sm-4 col-form-label">Invoice Date</label>
             <div class="col-sm-8">
-              <input type="date" class="form-control" id="invoice-date" placeholder="Invoice Date">
+              <input type="date" name="InvoiceDate" class="form-control" id="invoice-date" placeholder="Invoice Date">
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-4 col-form-label">Due Date</label>
+            <label for="DueDate" class="col-sm-4 col-form-label">Due Date</label>
             <div class="col-sm-8">
-              <input type="date" class="form-control" id="due-date" placeholder="Due Date">
+              <input type="date" class="form-control" name="DueDate" id="due-date" placeholder="Due Date">
             </div>
           </div>
         </div>
@@ -43,25 +43,25 @@
           <hr />
           <div class="row">
             <div class="col-sm-3">
-              <input type="text" class="form-control" id="customer-name" placeholder="Product Name">
+              <input type="text" class="form-control" id="product-name" placeholder="Product Name">
             </div>
             <div class="col-sm-1">
-              <input type="text" class="form-control" id="customer-name" placeholder="Unit">
+              <input type="text" class="form-control" id="unit" placeholder="Unit">
             </div>
             <div class="col-sm-1">
-              <input type="text" class="form-control" id="customer-name" placeholder="Quantity">
+              <input type="text" class="form-control" id="quantity" placeholder="Quantity">
             </div>
             <div class="col-sm-2">
-              <input type="text" class="form-control" id="customer-name" placeholder="Price/Unit">
+              <input type="text" class="form-control" id="price-per-unit" placeholder="Price/Unit">
             </div>
             <div class="col-sm-1">
-              <input type="text" class="form-control" id="customer-name" placeholder="GST">
+              <input type="text" class="form-control" id="gst" placeholder="GST">
             </div>
             <div class="col-sm-2">
-              <input type="text" class="form-control" id="customer-name" placeholder="Total">
+              <input type="text" class="form-control" id="total" placeholder="Total">
             </div>
             <div class="col-sm-2">
-              <button type="button" class="btn btn-success" onclick="createRecord();" title="Add Sales Plan">
+              <button type="button" class="btn btn-success" onclick="addProductDetails();" title="Add Product Details">
                 <i class="fa fa-plus">&nbsp; Add</i>
               </button>
             </div>
@@ -155,7 +155,6 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div ng-include="'../app/invoice/template/invoice-preview.html'">
-
       </div>
     </div>
   </div>

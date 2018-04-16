@@ -26,20 +26,53 @@
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-      <div class="text-center navbar-brand-wrapper"> <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo/logo.png" alt="logo"></a> <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo/logo_mini.png" alt="logo"></a> </div>
+      <div class="text-center navbar-brand-wrapper">
+        <a class="navbar-brand brand-logo" href="index.html">
+          <img src="images/logo/logo.png" alt="logo">
+        </a>
+        <a class="navbar-brand brand-logo-mini" href="index.html">
+          <img src="images/logo/logo_mini.png" alt="logo">
+        </a>
+      </div>
       <div class="navbar-menu-wrapper d-flex align-items-center">
-        <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize"> <span class="mdi mdi-equal display-3"></span> </button>
+        <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
+          <span class="mdi mdi-equal display-3"></span>
+        </button>
         <form class="form-inline mt-2 mt-md-0 d-none d-lg-block">
-          <div class="input-group search"> <span class="input-group-addon bg-transparent" id="basic-addon1"><i class="mdi mdi-magnify"></i></span> <input type="text" class="form-control bg-transparent" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1"> </div>
+          <div class="input-group search">
+            <span class="input-group-addon bg-transparent" id="basic-addon1">
+              <i class="mdi mdi-magnify"></i>
+            </span>
+            <input type="text" class="form-control bg-transparent" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+          </div>
         </form>
         <ul class="navbar-nav nav-header-item-wrapper">
-          <li class="nav-item d-none d-sm-block dropdown"> <a class="btn bg-transparent dropdown-toggle text-default-color" id="userDropdown" href="#" data-toggle="dropdown"> Hi Admin </a>
-            <div class="dropdown-menu navbar-dropdown preview-list p-3" aria-labelledby="userDropdown"> <a href="#" class="btn btn-block btn-link text-dark">View Profile</a> <a href="#" class="btn btn-block btn-link text-dark">Account Settings</a>
-              <div class="dropdown-divider mb-4"></div><a href="#" class="btn btn-block btn-primary">Logout</a> </div>
+          <li class="nav-item d-none d-sm-block dropdown">
+            <a class="btn bg-transparent dropdown-toggle text-default-color" id="userDropdown" href="#" data-toggle="dropdown">
+              Hi Admin
+            </a>
+            <div class="dropdown-menu navbar-dropdown preview-list p-3" aria-labelledby="userDropdown">
+              <a href="#" class="btn btn-block btn-link text-dark">
+                View Profile
+              </a>
+              <a href="#" class="btn btn-block btn-link text-dark">
+                Account Settings
+              </a>
+              <div class="dropdown-divider mb-4"></div>
+              <a href="#" class="btn btn-block btn-primary">
+                Logout
+              </a>
+            </div>
           </li>
-          <li class="nav-item color-variations d-none d-md-block" id="settings-trigger"><a class="nav-link" href="#"><i class="mdi mdi-format-color-fill"></i></a></li>
+          <li class="nav-item color-variations d-none d-md-block" id="settings-trigger">
+            <a class="nav-link" href="#">
+              <i class="mdi mdi-format-color-fill"></i>
+            </a>
+          </li>
         </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas"> <span class="mdi mdi-equal display-3"></span> </button>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-equal display-3"></span>
+        </button>
       </div>
     </nav>
     <!-- partial -->
@@ -49,8 +82,12 @@
           <div id="theme-settings" class="settings-panel">
             <i class="settings-close mdi mdi-close"></i>
             <p class="settings-heading">SIDEBAR SKINS</p>
-            <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
-            <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+            <div class="sidebar-bg-options selected" id="sidebar-light-theme">
+              <div class="img-ss rounded-circle bg-light border mr-3"></div>Light
+            </div>
+            <div class="sidebar-bg-options" id="sidebar-dark-theme">
+              <div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark
+            </div>
             <p class="settings-heading mt-2">HEADER SKINS</p>
             <div class="color-tiles mx-0 px-4">
               <div class="tiles primary"></div>
@@ -68,11 +105,17 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item"> <a class="nav-link" href="#!/"> <i class="fa fa-tachometer menu-icon" aria-hidden="true"></i> <span class="menu-title">Dashboard</span> </a> </li>
-          <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#uiBasicSubmenu" aria-expanded="false" aria-controls="collapseExample"> <i class="mdi mdi-buffer menu-icon"></i> <span class="menu-title">Inventory</span> <i class="mdi mdi-menu-down menu-arrow"></i> </a>
+          <li class="nav-item">
+            <a class="nav-link" href="#!/"> <i class="fa fa-tachometer menu-icon" aria-hidden="true"></i>
+            <span class="menu-title">Dashboard</span> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#uiBasicSubmenu" aria-expanded="false" aria-controls="collapseExample">
+            <i class="mdi mdi-buffer menu-icon"></i> <span class="menu-title">Inventory</span> <i class="mdi mdi-menu-down menu-arrow"></i>
+            </a>
             <div class="collapse" id="uiBasicSubmenu">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="#!login">Invoice</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#!invoice">Invoice</a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Delivery Note</a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/badges.html">Purchase Order</a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/breadcrumbs.html">Quotation</a></li>
@@ -82,8 +125,8 @@
           <li class="nav-item"> <a class="nav-link" data-toggle="collapse" href="#uiAdvancedSubmenu" aria-expanded="false" aria-controls="collapseExample"> <i class="mdi mdi-cube-outline menu-icon"></i> <span class="menu-title">Product Details</span> <i class="mdi mdi-menu-down menu-arrow"></i> </a>
             <div class="collapse" id="uiAdvancedSubmenu">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dragula.html">Products</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/clipboard.html">Category</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#!product">Products</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#!category">Category</a></li>
               </ul>
             </div>
           </li>
@@ -110,7 +153,6 @@
   <!-- container-scroller -->
 
   <!-- plugins:js -->
-
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/angular/angular.min.js"></script>
   <script src="node_modules/angular-route/angular-route.min.js"></script>
@@ -133,7 +175,7 @@
   <script src="js/dashboard.js"></script>
   <!-- End custom js for this page-->
   <script src="app.js"></script>
-  <script type="text/javascript" src="../app/dashboard/script/dashboard-controller.js"></script>
+  <script type="text/javascript" src="../app/dashboard/script/controller/dashboard-controller.js"></script>
 </body>
 
 </html>
